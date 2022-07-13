@@ -1,0 +1,4 @@
+[submodule "simpleeAG/odoo15"]
+	path = simpleeAG/odoo15
+	url = git@github.com:simpleeAG/odoo15.git
+	branch = 8.6dontdelete
