@@ -225,7 +225,7 @@
                         </td>
                         <td name="td_option_quantity">
                             <span t-field="option.quantity"/>
-                            <span t-field="option.line_id.uom_id"/>
+                            <span t-field="option.uom_id"/>
                         </td>
                         <td name="td_option_price_unit">
                             <strong class="text-right">
