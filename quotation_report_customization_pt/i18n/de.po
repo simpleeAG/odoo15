@@ -1609,6 +1609,18 @@ msgid "Description"
 msgstr "Beschreibung"
 
 #. module: sale
+#: model:ir.model.fields,field_description:sale.field_sale_order_option_ids__name
+#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:sale.view_order_form
+msgid "Description"
+msgstr "Beschreibung"
+
+#. module: sale
+#: model:ir.model.fields,field_description:sale.field_sale_order_option_ids__discount
+msgid "Discount (%)"
+msgstr "Rabatt (%)"
+
+#. module: sale
 #: model_terms:ir.ui.view,arch_db:sale.view_order_form
 msgid "Disc.%"
 msgstr ""
@@ -3111,6 +3123,18 @@ msgid "Quantity"
 msgstr "Menge"
 
 #. module: sale
+#: model:ir.model.fields,field_description:sale.field_sale_order_option_ids__uom_id
+#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
+msgid "Quantity"
+msgstr "Menge"
+
+#. module: sale_management
+#: model_terms:ir.ui.view,arch_db:sale_management.sale_order_portal_content_inherit_sale_management
+msgid "AMOUNT"
+msgstr "BETRAG"
+
+#. module: sale
 #: model:ir.model.fields,field_description:sale.field_product_product__visible_qty_configurator
 #: model:ir.model.fields,field_description:sale.field_product_template__visible_qty_configurator
 msgid "Quantity visible in configurator"
@@ -4408,6 +4432,13 @@ msgstr "UTM-Kampagne"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line__price_unit
+#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
+msgid "Unit Price"
+msgstr "Stückpreis"
+
+#. module: sale
+#: model:ir.model.fields,field_description:sale.field_sale_order_option_ids__price_unit
 #: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
 msgid "Unit Price"
