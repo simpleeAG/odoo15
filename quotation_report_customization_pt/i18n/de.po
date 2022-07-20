@@ -1608,14 +1608,14 @@ msgstr "Standardprodukt"
 msgid "Description"
 msgstr "Beschreibung"
 
-#. module: sale
+#. module: quotation_report_customization_pt
 #: model:ir.model.fields,field_description:sale.field_sale_order_option_ids__name
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_report_saleorder_document_new
 #: model_terms:ir.ui.view,arch_db:sale.view_order_form
 msgid "Description"
 msgstr "Beschreibung"
 
-#. module: sale
+#. module: quotation_report_customization_pt
 #: model:ir.model.fields,field_description:sale.field_sale_order_option_ids__discount
 msgid "Discount (%)"
 msgstr "Rabatt (%)"
@@ -1625,7 +1625,7 @@ msgstr "Rabatt (%)"
 msgid "Disc.%"
 msgstr ""
 
-#. module: sale
+#. module: quotation_report_customization_pt
 #: model:ir.model.fields,field_description:sale.field_sale_report__discount
 msgid "Discount %"
 msgstr "Rabatt %"
@@ -3122,15 +3122,15 @@ msgstr "Fakturierbare Mengen aus Verkaufsaufträgen"
 msgid "Quantity"
 msgstr "Menge"
 
-#. module: sale
+#. module: quotation_report_customization_pt
 #: model:ir.model.fields,field_description:sale.field_sale_order_option_ids__uom_id
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_report_saleorder_document_new
 #: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
 msgid "Quantity"
 msgstr "Menge"
 
-#. module: sale_management
-#: model_terms:ir.ui.view,arch_db:sale_management.sale_order_portal_content_inherit_sale_management
+#. module: quotation_report_customization_pt
+#: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_report_saleorder_document_new
 msgid "AMOUNT"
 msgstr "BETRAG"
 
