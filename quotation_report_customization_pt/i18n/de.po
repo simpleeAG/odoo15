@@ -28,8 +28,8 @@ msgstr "Beschreibung"
 
 #. module: quotation_report_customization_pt
 #: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_extend_optional_product_sale_report
-msgid "<th name="th_option_name" class="text-left">Disc.%</th>"
-msgstr "<th name="th_option_name" class="text-left">Rabatt(%)</th>"
+msgid "<th t-if="has_option_discount" name="th_option_discount" groups="product.group_discount_per_so_line" class="text-left">Disc.%</th>"
+msgstr "<th t-if="has_option_discount" name="th_option_discount" groups="product.group_discount_per_so_line" class="text-left">Rabatt%</th>"
 
 #. module: quotation_report_customization_pt
 #: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_extend_optional_product_sale_report
@@ -38,8 +38,8 @@ msgstr "Rabatt(%)"
 
 #. module: quotation_report_customization_pt
 #: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_extend_optional_product_sale_report
-msgid "<th name="th_option_name" class="text-left">Quantity</th>"
-msgstr "<th name="th_option_name" class="text-left">Menge</th>"
+msgid "<th name="th_option_quantity" class="text-left">Quantity</th>"
+msgstr "<th name="th_option_quantity" class="text-left">Menge</th>"
 
 #. module: quotation_report_customization_pt
 #: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_extend_optional_product_sale_report
@@ -48,8 +48,8 @@ msgstr "Menge"
 
 #. module: quotation_report_customization_pt
 #: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_extend_optional_product_sale_report
-msgid "<th name="th_option_name" class="text-left">Unit Price</th>"
-msgstr "<th name="th_option_name" class="text-left">Stückpreis</th>"
+msgid "<th name="th_option_price_unit" class="text-right">Unit Price</th>"
+msgstr "<th name="th_option_price_unit" class="text-right">Stückpreis</th>"
 
 #. module: quotation_report_customization_pt
 #: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_extend_optional_product_sale_report
@@ -58,8 +58,8 @@ msgstr "Stückpreis"
 
 #. module: quotation_report_customization_pt
 #: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_extend_optional_product_sale_report
-msgid "<th name="th_option_name" class="text-left">AMOUNT</th>"
-msgstr "<th name="th_option_name" class="text-left">BETRAG</th>"
+msgid "<th name="th_option_amount" class="text-right">AMOUNT</th>"
+msgstr "<th name="th_option_amount" class="text-right">BETRAG</th>"
 
 #. module: quotation_report_customization_pt
 #: model_terms:ir.ui.view,arch_db:quotation_report_customization_pt.pt_extend_optional_product_sale_report
