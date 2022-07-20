@@ -90,18 +90,15 @@
                     </div>
                 </t>
             </t>
-            <!-- <t t-else="">
+            <t t-else="">
                 <t t-set="information_block">
                     <div class="col-6 pb-5">
-                        <strong t-if="doc.company_id">Company Address:</strong>
-                        <div name="company_address">
-                            <t t-if="doc.company_id.street"> <span t-esc="doc.company_id.street"/><br/></t>
-                            <t t-if="doc.company_id.street2"> <span t-esc="doc.company_id.street2"/><br/></t>
-                            <span t-if="doc.company_id.city" t-esc="doc.company_id.city"></span>
-                        </div>
+                        <strong t-if="doc.partner_shipping_id != doc.partner_invoice_id">Invoicing Address:</strong>
+                        <div t-field="doc.partner_invoice_id"
+                        t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}'/>
                     </div>
                 </t>
-            </t> -->
+            </t>
         </xpath>
     </template>
 
@@ -135,7 +132,7 @@
                             </t>
                         </td>
                         <!--td name="td_name"><span t-field="line.name"/></td-->
-                        <td name="td_name"><span t-esc="line.product_id.display_name"/><span t-esc="line.product_id.description"/></td>
+                        <td name="td_name"><span t-esc="line.product_id.display_name"/><span t-esc="line.product_id.description_sale"/></td>
                         <td name="td_quantity" class="text-right">
                             <span t-field="line.product_uom_qty"/>
                             <span t-field="line.product_uom"/>
