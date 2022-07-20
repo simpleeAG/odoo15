@@ -221,7 +221,8 @@
                         </td>
                         <td name="td_option_name">
                             <!--span t-field="option.name"/-->
-                            <span t-esc="option.product_id.display_name"/><span t-esc="option.product_id.description"/>
+                            <span t-esc="option.product_id.display_name"/>
+                            <br/><span t-esc="option.product_id.description_sale"/>
                         </td>
                         <td name="td_option_quantity">
                             <span t-field="option.quantity"/>
