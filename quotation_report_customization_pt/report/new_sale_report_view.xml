@@ -28,10 +28,13 @@
             </div>
             <t t-out="0"/>
         </div>
-        <div t-attf-class="footer o_boxed_footer o_company_#{company.id}_layout">
-            <div class="text-center">
+        <div t-attf-class="footer o_boxed_footer o_company_#{company.id}_layout" style="border-top:none !important;">
+            <div class="terms_condition" style="font-size: 12px !important;">
+                <p t-esc="doc.note" />
+            </div>
+            <div class="text-center" style="border-top:3px solid rgb(0, 0, 0) !important;">
                 <!-- <div t-field="company.report_footer"/> -->
-                <div><strong style="font-weight:600 !important;">simplee AG</strong> Im Schörli 5, 8600 Dübendorf <strong>E-Mail:</strong> <a href="mailto:hallo@simplee-energy.ch">hallo@simplee-energy.ch</a> <strong>Telefon:</strong> +41 58 510 89 00 <strong>Bank:</strong> Zürcher Kantonalbank<br/>
+                <div style="font-size:12px !important;"><strong style="font-weight:600 !important;">simplee AG</strong> Im Schörli 5, 8600 Dübendorf <strong>E-Mail:</strong> <a href="mailto:hallo@simplee-energy.ch">hallo@simplee-energy.ch</a> <strong>Telefon:</strong> +41 58 510 89 00 <strong>Bank:</strong> Zürcher Kantonalbank<br/>
 <strong>Kontoinhaber:</strong> simplee AG <strong>BIC:</strong> ZKBKCHZZ80A <strong>IBAN:</strong> CH71 0070 0110 0068 7576 0 <strong>MWST-Nr.:</strong> CHE-333.003.455 MWST<br/>
 <strong>Umsatzsteuer-Identifikationsnummer:</strong> CHE-333.003.455 MWST <strong>Website:</strong> <a href="https://www.simplee-energy.ch/">www.simplee-energy.ch</a></div>
                 <div t-if="report_type == 'pdf'">
@@ -68,6 +71,14 @@
         <xpath expr="//div[hasclass('page')]/h2[hasclass('mt16')]" position="attributes">
             <attribute name="class">mt16 pb-5</attribute>
         </xpath>
+
+        <xpath expr="//div[hasclass('page')]/h2[hasclass('mt16')]" position="after">
+            <div class=" pb-5">
+                <p>Sehr geehrte Damen und Herren</p>
+                <p>Vielen Dank für Ihre Anfrage! Gerne unterbreiten wir Ihnen unser Angebot.</p>
+            </div>
+        </xpath>
+
         <xpath expr="//t[@t-if='doc.partner_shipping_id == doc.partner_invoice_id
                              and doc.partner_invoice_id != doc.partner_id
                              or doc.partner_shipping_id != doc.partner_invoice_id']" position="replace">
@@ -194,6 +205,13 @@
    <xpath expr="//thead//tr//th[@name='th_taxes']" position="replace">
    </xpath>
    <xpath expr="//td[@name='td_taxes']" position="replace">
+   </xpath>
+   <xpath expr="//page//p[@t-field='doc.note']" position="replace">
+        <div class=" pb-5">
+            <p>Wir hoffen, das Angebot entspricht Ihren Vorstellungen. Wir stehen bei Fragen jederzeit zur Verfügung.</p>
+            <p>Freundliche Grüsse</p>
+            <p>Ihr simplee-Team</p>
+        </div>
    </xpath>
 
 </template>

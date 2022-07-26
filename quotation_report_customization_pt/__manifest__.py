@@ -11,6 +11,9 @@
     'data': [
               'report/new_sale_report_view.xml',
             ],
+            'web.report_assets_common': [
+              'quotation_report_customization_pt\static\src\scss\layout_boxed.scss',
+            ],
     'license': 'OPL-1',
     'price': 170.00,
     'currency': 'USD',
