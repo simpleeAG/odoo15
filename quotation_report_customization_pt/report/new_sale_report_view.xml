@@ -206,7 +206,7 @@
    </xpath>
    <xpath expr="//td[@name='td_taxes']" position="replace">
    </xpath>
-   <xpath expr="//page//p[@t-field='doc.note']" position="replace">
+   <xpath expr="//p[@t-field='doc.note']" position="replace">
         <div class=" pb-5">
             <p>Wir hoffen, das Angebot entspricht Ihren Vorstellungen. Wir stehen bei Fragen jederzeit zur Verfügung.</p>
             <p>Freundliche Grüsse</p>
