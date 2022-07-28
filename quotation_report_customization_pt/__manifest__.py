@@ -10,7 +10,7 @@
     'depends': ['sale_management'],
     'data': [
               'report/new_sale_report_view.xml',
-              'views/sale_order_line.xml',
+              # 'views/sale_order_line.xml',
             ],
     'license': 'OPL-1',
     'price': 170.00,
