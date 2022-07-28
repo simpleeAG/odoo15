@@ -30,7 +30,7 @@
         </div>
         <div t-attf-class="footer o_boxed_footer o_company_#{company.id}_layout" style="border-top:none !important;">
             <style>
-            .terms_condition p a{
+            .terms_condition p a,a{
                 color: #017e84 !important;
             }
           </style>
