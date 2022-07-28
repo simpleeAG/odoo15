@@ -8,3 +8,8 @@ class ProductProduct(models.Model):
         'Sales Description', translate=True,
         help="A description of the Product that you want to communicate to your customers. "
              "This description will be copied to every Sales Order, Delivery Order and Customer Invoice/Credit Note")
+
+class SaleOrderLine(models.Model):
+    _inherit = 'sale.order.line'
+
+    name = fields.Html(string='Description', required=True, translate=True)
